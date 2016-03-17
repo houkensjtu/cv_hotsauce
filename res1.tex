@@ -9,7 +9,15 @@
 \usepackage{fontspec}
 
 % For english characters and numbers, Times New Roma seems to be perfect.
-\setmainfont[ Path = fonts/]{times.ttf}
+\setmainfont[ Path = fonts/,BoldFont = timesbd]{times}
+\makeatletter
+\newlength\tdima
+\newcommand\tabright[1]{%
+      \setlength\tdima{\linewidth}%
+      \addtolength\tdima{\@totalleftmargin}%
+      \addtolength\tdima{-\dimen\@curtab}%
+      \makebox[\tdima][r]{#1}}
+\makeatother
 
 % \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
 
@@ -20,27 +28,39 @@
 \name{Qian Bao\\[12pt]}     % the \\[12pt] adds a blank
 				        % line after name      
 
-\address{\textbf PRESENT ADDRESS\\Yato-cho 2chome 2-9 Room 510\\Nishitokyo-city,Tokyo\\Japan, Postcode: 188-0001}
+\address{\textbf{PRESENT ADDRESS}\\Yato-cho 2chome 2-9 Room 510\\Nishitokyo-city,Tokyo\\Japan, Postcode: 188-0001}
 \address{\textbf{CONTACT INFO} \\ Email: houkensjtu@gmail.com \\ Mobile: +81-090-9427-1113 \\  Phone: +81-042-468-4474}
                                   
 \begin{resume}
 
 \section{ABOUT ME}          
-Hi! I am Bao /\textipa{baU}/. I' m currently working as a cryogenic engineer in Sumitomo Heavy Industries, Ltd. in Japan,
- my work focus on design and development of next-generation GM type cryocoolers.
+Hi! I am Bao /\textipa{baU}/. I' m currently working as a research engineer in Sumitomo Heavy Industries, Ltd. in Japan,
+ my work focus on design and development of next-generation GM type cryocoolers. I earned my Bachelor and Master degree
+ with a major in Mechanical Engineering. Besides my job, which is mainly concerned with Engineering fluid dynamics and heat transfer,
+  I am particularly enamored with Linux, open-source software and electronic gadgets.
 
 
 \section{EDUCATION}      
     \vspace{-0.1in}	    
-    \begin{tabbing}
-    \hspace{2.2in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Shanghai Jiaotong University} \>  \>2006.9-2010.7
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing    
-   
+
    \begin{tabbing}
-    \hspace{2.2in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Tohoku University} \>  \>2010.7-2013.3
+    \hspace{2.2in}\= \hspace{2.1in}\= \kill % set up two tab positions
+    {\bf Tohoku University} \> \tabright{2010.7-2013.3}\\
+    Major: Mechanical engineering\\
+    Thesis: Flow and heat transfer behavior of bubbles in microchannel \\
+     \> \tabright{Advisor: Prof. S. Maruyama}\\
+   \end{tabbing}\vspace{-38pt}      % suppress blank line after tabbing    
+   \vspace{-0.1in}
+    \begin{tabbing}
+    \hspace{2.2in}\= \hspace{2.1in}\= \kill % set up two tab positions
+    {\bf Shanghai Jiaotong University} \>  \tabright{2006.9-2010.7} \\
+    Major: Mechanical engineering \>Second major: Japanese language \\
+    Thesis: Mass flow distribution behavior of liquid nitrogen in a minichannel heat sink \\
+     \> \tabright{Advisor: Prof. P. Zhang}\\
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing    
+    
+   
+
 
 \section{EMPLOYMENT}
     \vspace{-0.1in}	    
