@@ -1,38 +1,59 @@
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass{res} 
+\documentclass[12pt,A4]{res} 
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+\usepackage{tipa}
+% Heart of xelatex. In order to utilize ttf and ttc font.
+\usepackage{fontspec}
 
+% For english characters and numbers, Times New Roma seems to be perfect.
+\setmainfont[ Path = fonts/]{times.ttf}
+
+% \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+
+\usepackage[top=1in, bottom=1.5in, left=1.0in, right=1.4in]{geometry}
+\renewcommand{\namefont}{\bfseries\LARGE}
 \begin{document} 
 
-\name{HAROLD C. GOODBETTER\\[12pt]}     % the \\[12pt] adds a blank
+\name{Qian Bao\\[12pt]}     % the \\[12pt] adds a blank
 				        % line after name      
 
-\address{\bf  PRESENT ADDRESS\\193 5th Avenue\\Troy, NY 12180\\(518) 274-1234}
-\address{\bf PERMANENT ADDRESS \\ 110 Brant Avenue \\  Upper Saddle
-         River,   NJ 07458 \\  (201) 555-9509}
+\address{\textbf PRESENT ADDRESS\\Yato-cho 2chome 2-9 Room 510\\Nishitokyo-city,Tokyo\\Japan, Postcode: 188-0001}
+\address{\textbf{CONTACT INFO} \\ Email: houkensjtu@gmail.com \\ Mobile: +81-090-9427-1113 \\  Phone: +81-042-468-4474}
                                   
 \begin{resume}
 
-\section{JOB OBJECTIVE}          
-    A summer position that will use my accounting and computer
-    skills.          
- 
-\section{EDUCATION}          
-    Rensselaer Polytechnic Institute, Troy, NY  \\        
-    Bachelor of Science, Management, May 1990   \\       
-    Concentration in Management Systems       \\   
-    Minors in Computer Science and Economics  \\        
-    G.P.A. 3.3/4.0          
+\section{ABOUT ME}          
+Hi! I am Bao /\textipa{baU}/. I' m currently working as a cryogenic engineer in Sumitomo Heavy Industries, Ltd. in Japan,
+ my work focus on design and development of next-generation GM type cryocoolers.
 
- 
+
+\section{EDUCATION}      
+    \vspace{-0.1in}	    
+    \begin{tabbing}
+    \hspace{2.2in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Shanghai Jiaotong University} \>  \>2006.9-2010.7
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing    
+   
+   \begin{tabbing}
+    \hspace{2.2in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Tohoku University} \>  \>2010.7-2013.3
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing    
+
+\section{EMPLOYMENT}
+    \vspace{-0.1in}	    
+    \begin{tabbing}
+    \hspace{2.2in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Sumitomo Heavy Industries, Ltd.} \>  \>2013.4-Present
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   
+     
 \section{EXPERIENCE}
    \vspace{-0.1in}	
    \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+   \hspace{2.0in}\= \hspace{2.0in}\= \kill % set up two tab positions
     {\bf Telefund Associate} \>Rensselaer Fund     \>Fall 1987-Present\\
                              \>Troy, NY
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
@@ -40,7 +61,7 @@
     increase scholarship and financial aid funds; averaging 80          
     percent pledge rate. Top three percent associate.
    \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+   \hspace{2.0in}\= \hspace{2.0in}\= \kill % set up two tab positions
     {\bf Team Programmer} \>Group W Cable, Westinghouse Corp \> ~~~~~~ Summer 1987\\
                           \>Mahway, NJ
    \end{tabbing}\vspace{-20pt}
@@ -48,7 +69,7 @@
     provided assistance with invoice liabilities after          
     divestiture of Group W Cable by Westinghouse.
    \begin{tabbing}%
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions          
+   \hspace{2.0in}\= \hspace{2.0in}\= \kill % set up two tab positions          
    {\bf Sales Assistant}  \>AP Technical Sales Inc. \> Summers  1985-86\\
                           \>Palisades Park, NJ
    \end{tabbing}\vspace{-20pt}
@@ -65,20 +86,7 @@
  
  
 \section{HONORS AND AWARDS}          
-    Epsilon Delta Sigma: Honorary Management Society at          
-    Rensselaer    \\      
-    Dean's List of Distinguished Students: Fall 1986-Spring 1988  \\        
-    National Honor Society: Northern Highlands High School  \\        
-    Creative Essay Award: Northern Highlands High School  \\        
-    Meritorious Action Life Saving Award: Boy Scouts of America          
- 
-\section{EXTRACURRICULAR ACTIVITIES}          
-    Epsilon Delta Sigma Public Relations Committee \\         
-    Rensselaer Ski Club     \\     
-    Bergen County Task Force Student Liaison 1986  \\        
-    LEADD (Legislators and Educators Against Drunk Driving) Chairman
-     1985-86  \\        
-    Youth Group - Temple Beth Or Activities Chairman 1985-86          
- 
+    Some honor... 
+
 \end{resume}
 \end{document}
