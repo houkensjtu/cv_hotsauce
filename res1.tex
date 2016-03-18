@@ -2,14 +2,17 @@
 % This file uses the resume document class (res.cls)
 
 \documentclass[12pt,A4]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+% TIPA is a system for processing phonetic symbols in latex. 
 \usepackage{tipa}
+
 % Heart of xelatex. In order to utilize ttf and ttc font.
 \usepackage{fontspec}
 
 % For english characters and numbers, Times New Roma seems to be perfect.
 \setmainfont[ Path = fonts/,BoldFont = timesbd]{times}
+
+% A macro used to provide a right tab.
 \makeatletter
 \newlength\tdima
 \newcommand\tabright[1]{%
@@ -19,34 +22,38 @@
       \makebox[\tdima][r]{#1}}
 \makeatother
 
-% \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+% increase text height to fit on 1-page 
+\setlength{\textheight}{9.5in} 
 
 \usepackage[top=1in, bottom=1.5in, left=1.0in, right=1.4in]{geometry}
+
+% To size up the display of Name region.
 \renewcommand{\namefont}{\bfseries\LARGE}
+
+
 \begin{document} 
 
-\name{Qian Bao\\[12pt]}     % the \\[12pt] adds a blank
-				        % line after name      
+% the \\[12pt] adds a blank line after name    
+\name{Qian Bao\\[12pt]}  
 
-\address{\textbf{PRESENT ADDRESS}\\Yato-cho 2chome 2-9 Room 510\\Nishitokyo-city,Tokyo\\Japan, Postcode: 188-0001}
-\address{\textbf{CONTACT INFO} \\ Email: houkensjtu@gmail.com \\ Mobile: +81-090-9427-1113 \\  Phone: +81-042-468-4474}
+\address{\textbf{PRESENT ADDRESS}\\ Postcode: 188-0001 \\Yato-cho 2chome 2-9 Room 510\\Nishitokyo-city,Tokyo\\Japan}
+\address{\textbf{PERSONAL DATA} \\Date of birth: 1987.11.13 \\ Place of birth: Shanghai, China \\ Gender: Male \\Email:houkensjtu@gmail.com}
                                   
 \begin{resume}
 
-\section{ABOUT ME}          
-Hi! I am Bao /\textipa{baU}/. I' m currently working as a research engineer in Sumitomo Heavy Industries, Ltd. in Japan,
- my work focus on design and development of next-generation GM type cryocoolers. I earned my Bachelor and Master degree
- with a major in Mechanical Engineering. Besides my job, which is mainly concerned with Engineering fluid dynamics and heat transfer,
-  I am particularly enamored with Linux, open-source software and electronic gadgets.
-
+\section{ABOUT ME} 
+Hi! I am Bao /\textipa{baU}/. I' m currently working as a research engineer at Sumitomo Heavy Industries, Ltd. in Japan.
+ My work focus on design and development of next-generation GM type cryocoolers. Before that, I earned my Bachelor and Master degree
+ with a major in Mechanical Engineering. Besides my job, I am particularly enamored with Linux, open-source software ,electronic gadgets and foreign language learning.
 
 \section{EDUCATION}      
     \vspace{-0.1in}	    
 
    \begin{tabbing}
     \hspace{2.2in}\= \hspace{2.1in}\= \kill % set up two tab positions
-    {\bf Tohoku University} \> \tabright{2010.7-2013.3}\\
+    {\bf Tohoku University (In: Sendai, Japan)} \> \tabright{2010.7-2013.3}\\
     Department: Graduate School of Engineering, Master of Engineering\\
+    Major: \\
     Thesis: Study of Fluid Flow and Heat Transfer Behavior of Bubbles in a microchannel\\
      \> \tabright{Advisor: Prof. S. Maruyama}\\
    \end{tabbing}\vspace{-38pt}      % suppress blank line after tabbing
@@ -61,16 +68,18 @@ Hi! I am Bao /\textipa{baU}/. I' m currently working as a research engineer in S
     
     \begin{tabbing}
     \hspace{2.2in}\= \hspace{2.1in}\= \kill % set up two tab positions
-    {\bf Shanghai Jiaotong University} \> \tabright{2006.9-2010.7} \\
+    {\bf Shanghai Jiaotong University (In: Shanghai, China)} \> \tabright{2006.9-2010.7} \\
     Department: School of Mechanical Engineering, Bachelor of Engineering\\
+    Major: \\
     Thesis: Mass flow distribution behavior of liquid nitrogen in a minichannel heat sink \\
     \> \tabright{Advisor: Prof. P. Zhang}\\
    \end{tabbing}\vspace{-40pt}      % suppress blank line after tabbing    
+
     Selected courses:\\\vspace{-10pt}
     \begin{itemize}
       \item Engineering Fluid Mechanics
-      \item Computational Fluid and Heat Transfer
-      \item Heat Transfer and Mass Transfer
+      \item Computational Fluid Dynamics and Heat Transfer
+      \item Heat and Mass Transfer
       \item Engineering Thermodynamics
       \item Programming Abstractions
       \item Aerodynamics and Two-phase Flow
@@ -80,52 +89,34 @@ Hi! I am Bao /\textipa{baU}/. I' m currently working as a research engineer in S
     \vspace{-0.1in}
     \begin{tabbing}
     \hspace{2.2in}\= \hspace{2.1in}\= \kill % set up two tab positions
-    {\bf Shanghai Jiaotong University} \> \tabright{2008.9-2010.7} \\
-    Department: School of Foreign Languages, Bachelor of Arts\\
+    {\bf Shanghai Jiaotong University (In: Shanghai, China)} \> \tabright{2008.9-2010.7} \\
+    Department: School of Foreign Languages, Bachelor of Arts \bf{(second degree)}\\
+    Major: Japanese Language\\
     \end{tabbing}
     
 \section{EMPLOYMENT}
     \vspace{-0.1in}	    
     \begin{tabbing}
-    \hspace{2.2in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Sumitomo Heavy Industries, Ltd.} \>  \>2013.4-Present
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \hspace{2.2in}\= \hspace{2.1in}\= \kill % set up two tab positions
+    {\bf Sumitomo Heavy Industries, Ltd. (In: Tokyo, Japan)} \> \tabright{2013.4-Present} \\
+    Department: Technology Research Center, Research Engineer \\
+   \end{tabbing}\vspace{-40pt}      % suppress blank line after tabbing
+   Scope of work: Design, simulation and experimental test of next-generation GM (Gifford-McMahon) type cryocoolers.
    
      
-\section{EXPERIENCE}
-   \vspace{-0.1in}	
-   \begin{tabbing}
-   \hspace{2.0in}\= \hspace{2.0in}\= \kill % set up two tab positions
-    {\bf Telefund Associate} \>Rensselaer Fund     \>Fall 1987-Present\\
-                             \>Troy, NY
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Generated alumni and parent support to reduce tuition,          
-    increase scholarship and financial aid funds; averaging 80          
-    percent pledge rate. Top three percent associate.
-   \begin{tabbing}
-   \hspace{2.0in}\= \hspace{2.0in}\= \kill % set up two tab positions
-    {\bf Team Programmer} \>Group W Cable, Westinghouse Corp \> ~~~~~~ Summer 1987\\
-                          \>Mahway, NJ
-   \end{tabbing}\vspace{-20pt}
-    Liaison between accounting department and controller,          
-    provided assistance with invoice liabilities after          
-    divestiture of Group W Cable by Westinghouse.
-   \begin{tabbing}%
-   \hspace{2.0in}\= \hspace{2.0in}\= \kill % set up two tab positions          
-   {\bf Sales Assistant}  \>AP Technical Sales Inc. \> Summers  1985-86\\
-                          \>Palisades Park, NJ
-   \end{tabbing}\vspace{-20pt}
-    Duties included telemarketing, data entry, and invoicing.          
-    Successfully converted catalog inquiries to sales          
-    opportunities by telemarketing program.          
-
+\section{LANGUAGE SKILLS}
+Mandarin Chinese (mother tongue) \\
+English (professional efficiency) \\
+Japanese (full professional efficiency) \\
+German (elementary)     
 
 \section{COMPUTER SKILLS}          
-    Extensive knowledge of hardware and software for IBM PC and          
-    MTS. \\         
-    Proficient programming skills in COBOL, WATFIV (FORTRAN), and          
-    BASIC.          
- 
+Solid operation knowledge of Linux (long time hobbyist) \\
+Programming language experienced: C, C++, Python, Fortran, Matlab \\
+Basic operation knowledge: ANSYS Fluent, OpenFOAM, Gerris, CAD \\
+Programming of measurement instruments over GPIB using VISA \\
+Fundamental understanding of Computer Science (by self-learning) \\
+And curiosity towards any unknown hardware / software !
  
 \section{HONORS AND AWARDS}          
     Some honor... 
