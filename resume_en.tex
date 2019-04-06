@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Qian Bao
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+% TIPA is a system for processing phonetic symbols in latex. 
+\usepackage{tipa}
+% Heart of xelatex. In order to utilize ttf and ttc font.
+\usepackage{fontspec}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+%------------------------
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------
+%  CV STARTS HERE
+%------------------------
+
+\begin{document}
+
+%---------HEADING--------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Qian Bao}} & Email : \href{mailto:houkensjtu@gmail.com}{houkensjtu@gmail.com}\\
+  Address : 3273 W. Cedar Street, Allentown, 18104 PA & Mobile : +1-610-704-4131 \\
+\end{tabular*}
+
+
+%------EDUCATION---------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tohoku University}{Sendai, Japan}
+      {Master of Engineering in Graduate School of Mechanical Engineering;  GPA: 3.7/4.0}{Oct. 2010 -- Mar. 2013}
+      
+      Thesis : Study of Heat Transfer and Fluid Flow of Bubbles in a microchannel; Advisor : Shigenao Maruyama
+
+    \resumeSubheading
+      {Shanghai Jiaotong University}{Shanghai, China}
+      {Bachelor of Engineering in School of Mechanical Engineering;  GPA: 3.5/4.0}{Sep. 2006 -- Jun. 2010}
+      
+      Thesis : Mass flow distribution behavior of liquid nitrogen in a minichannel heat sink; Advisor : Peng Zhang
+  \resumeSubHeadingListEnd
+
+
+%-----EXPERIENCE----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Sumitomo Cryogenics of America, Inc}{Allentown, PA}
+    {Research Engineer}{Oct 2018 - Present}
+    \resumeItemListStart
+      \resumeItem{Development of pneumatic drive high capacity Gifford-McMahon cryocooler}
+      {Leading the R\&D of a next-generation cryocooler product. Carried out numerical thermal/mechanical analysis of the key components
+      and proposed the prototyping strategies. At the same time, facilitated the communication among design team, business stakeholders, 
+      global partners and headquarters.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Sumitomo Heavy Industries,Ltd.}{Tokyo, Japan}
+      {Research Engineer}{Apr 2013 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{Development of next generation 2K Gifford-McMahon cryocooler}
+        {Carried out detailed analysis of previous cryocooler products and designed key components (regenerator etc.) of a highly compact Gifford-McMahon cryocoolers
+        which can achieve 2K on second stage. Based on this work, published 2 papers in international cryogenic conference and 1 journal paper in Japan. 
+        The design result is recognized as the most compact 2K Gifford-McMahon cryocooler in the world.
+        This project was supported by the National Institute of Information 
+        and Communications Technology (NICT), JAPAN.}
+        \resumeItem{Development of next generation high capacity Gifford-McMahon cryocooler}
+        {Carried out conceptual design and detail analysis of a next generation high capacity Gifford-McMahon cryocooler. Built test facilities to assist the
+        prototyping of innovative design concepts. Published 2 papers in internation cryogenic conference based on this work.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  
+%-----------PROJECTS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Mechnical design}
+      {General knowledge of mechanical system, manufacturing process and design process. Can operate FEM analysis by Ansys Mechanical
+      to facilitate and accelerate product prototyping. 3+ years experience of Solidworks. CSWA certificated by Solidworks.}
+    \resumeSubItem{Thermal/Fluid dynamic analysis}
+      {Built numerical tools to assist product design (Python, Fortran, D3.js). Carried out thermal/fluid dynamic analysis of complex 
+      heat exchanger by OpenFoam.}
+    \resumeSubItem{Programming}
+      {Broad and in-depth knowledge of programming languages and general computer science as a mechanical engineer. Wrote numerical
+      tools in C, Fortran, Python and Javascript. Built customized data acquisition software to assist in-house performance experiment.}
+    \resumeSubItem{6-sigma (toolset of process immprovement)}
+      {General understanding of the 6-$\sigma$ toolset and process. 3+ years working as a member and now project leader leading the team
+      going through the design review process of a new product.}
+\resumeSubHeadingListEnd
+
+
+%----------Language skill-------
+\section{Language Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Mandarin Chinese}{Mother tongue}
+  \resumeSubItem{English}{Professional efficiency; TOEFL iBT 108/120; GRE V156 + Q170}
+  \resumeSubItem{Japanese}{Professional efficiency; JLPT N1 176/180}
+  \resumeSubItem{German}{Intermediate efficiency; CEFR B1}
+\resumeSubHeadingListEnd
+
+
+%----------Publications-------
+\section{Publication}
+1.Experimental Investigation of Compact 2 K GM Cryocoolers, Physics Procedia, Volume 67, Pages 428-433, ISSN 1875-3892,
+https://doi.org/10.1016/j.phpro.2015.06.053., (25th International Cryogenic Engineering Conference and the International Cryogenic Materials Conference in 2014, ICEC 25–ICMC 2014, Netherland)
+
+2.Development of a compact 2K GM cryocooler, Cryogenic engineering, Vol.50 (2015) No.3 p. 125-131
+
+3.Recent development status of compact 2 K GM cryocoolers,
+IOP Conference Series: Materials Science and Engineering,
+volume 101,
+p.012136.
+(Cryogenic Engineering Conference ,CEC 2015: Tucson, AZ, USA, June 28 - July 2, 2015)
+
+4.Development status of a high cooling capacity single stage GM cryocooler,
+Cryocooler 19,
+pp. 291-297,
+(International Conference of cryocoolers ,ICC19: San Diego, CA, USA, June 20-23, 2016)
+
+5.Development of a pneumatic GM cryocooler with dual-displacer (Oral presentation, International workshop on cooling of HTS-Applications, IWC-HTS, Karlsruhe, Germany, September 13-15, 2017)
+
+%----------Patent-------------
+
+
+\end{document}
